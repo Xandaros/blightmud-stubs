@@ -20,7 +20,7 @@ end
 
 ---@param host string
 ---@param port number
----@param tls boolean?
+---@param tls boolean | nil
 function mud.connect(host, port, tls)
 end
 

@@ -58,7 +58,7 @@ function alias.AliasGroup:add(regex_or_alias, callback)
 end
 
 ---@param id number
----@return alias.Alias?
+---@return alias.Alias | nil
 function alias.AliasGroup:get(id)
 end
 

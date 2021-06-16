@@ -29,7 +29,7 @@ end
 function tasks.idle()
 end
 
----@return tasks.Task?
+---@return tasks.Task | nil
 function tasks.get_current()
 end
 

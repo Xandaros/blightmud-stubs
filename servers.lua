@@ -4,7 +4,7 @@ servers = {}
 ---@param name string
 ---@param host string
 ---@param port number
----@param tls boolean?
+---@param tls boolean | nil
 function servers.add(name, host, port, tls)
 end
 

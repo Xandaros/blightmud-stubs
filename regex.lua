@@ -21,7 +21,7 @@ end
 
 ---@param str string
 ---@param replace string
----@param count number?
+---@param count number | nil
 ---@return string
 function Regex:replace(str, replace, count)
 end

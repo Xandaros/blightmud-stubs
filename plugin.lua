@@ -33,6 +33,6 @@ end
 function plugin.enabled()
 end
 
----@param plugin string?
+---@param plugin string | nil
 function plugin.dir(plugin)
 end

@@ -6,19 +6,19 @@ trigger = {}
 ---@field gag boolean
 ---@field raw boolean
 ---@field prompt boolean
----@field count number?
+---@field count number | nil
 ---@field enabled boolean
 local Options = {}
 
 ---@param regex string
 ---@param options trigger.Options
 ---@param callback trigger.callback
----@return trigger.Trigger?
+---@return trigger.Trigger | nil
 function trigger.add(regex, options, callback)
 end
 
 ---@param id number
----@return trigger.Trigger?
+---@return trigger.Trigger | nil
 function trigger.get(id)
 end
 
@@ -46,7 +46,7 @@ end
 ---@field gag boolean
 ---@field raw boolean
 ---@field prompt boolean
----@field count number?
+---@field count number | nil
 ---@field enabled boolean
 ---@field id number Do not change!
 trigger.Trigger = {}
@@ -94,8 +94,8 @@ function trigger.TriggerGroup.new(id)
 end
 
 ---@param regex_or_trigger string | trigger.Trigger
----@param options trigger.Options?
----@param callback trigger.callback?
+---@param options trigger.Options | nil
+---@param callback trigger.callback | nil
 ---@return trigger.Trigger
 function trigger.TriggerGroup:add(regex_or_trigger, options, callback)
 end
